@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronLeft, Github, Linkedin, Mail, User, Briefcase, Award, BookOpen, Code, Home } from 'lucide-react';
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 // Components
 import Timeline from './components/Timeline';
@@ -123,7 +124,9 @@ const App: React.FC = () => {
   };
 
   return (
+    
     <div className="app-container text-white min-h-screen">
+      <Analytics />
       {/* Character */}
       <div 
         className={`character ${isMoving ? 'walking' : ''} ${direction}`}
