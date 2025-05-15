@@ -120,7 +120,7 @@ const Education: React.FC = () => {
                 <div key={item.id} className="math-card bg-gray-800 rounded-lg p-6 shadow-lg transition-transform hover:transform hover:scale-105">
                   <div className="flex justify-between items-start mb-4">
                     <h4 className="text-xl font-bold text-blue-400">{item.degree}</h4>
-                    <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded-full flex items-center">
+                    <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded-full flex items-center whitespace-nowrap" >
                       <Calendar size={14} className="mr-1" />
                       {item.period}
                     </span>
@@ -133,10 +133,10 @@ const Education: React.FC = () => {
                   <div className="mt-4 p-3 bg-gray-700 rounded-md">
                     <div className="text-sm font-semibold mb-1">Courses & Topics:</div>
                     <div className="flex flex-wrap gap-2">
-                      <span className="education-tag">Calculus 📊</span>
+                      <span className="education-tag">Calculus ∫</span>
                       <span className="education-tag">Linear Algebra 🧮</span>
                       <span className="education-tag">Statistics 📈</span>
-                      <span className="education-tag">Probability ∫</span>
+                      <span className="education-tag">Probability 📊</span>
                       <span className="education-tag">Machine Learning 🤖</span>
                       <span className="education-tag">Python 🐍</span>
                     </div>
